@@ -26,17 +26,23 @@ npm install --save react-custom-hooks-collection
 
 ## Usage
 
+As in /example/src/App.js
+
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
+import TogglesDemo from './components/TogglesDemo'
+import './styles.css'
 
-import MyComponent from 'react-custom-hooks-collection'
-import 'react-custom-hooks-collection/dist/index.css'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+function App() {
+  return (
+    <div className='App'>
+      <h1>React Hooks Demo</h1>
+      <TogglesDemo />
+    </div>
+  )
 }
+
+export default App
 ```
 
 ## License
