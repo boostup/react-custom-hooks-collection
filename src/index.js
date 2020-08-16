@@ -1,11 +1,11 @@
-// import React from 'react'
-// import styles from './styles.module.css'
-
-// export const ExampleComponent = ({ text }) => {
-//   return <div className={styles.test}>Example Component: {text}</div>
-// }
-
 import useToggle from './hooks/useToggleState'
-// import ModalButton from './components/ModalButton';
-// console.log(useToggle)
-export { useToggle }
+import useInputState from './hooks/useInputState'
+import useLocalStorageState from './hooks/useLocalStorageState'
+import useLocalStorageReducer from './hooks/useLocalStorageReducer'
+
+export {
+  useToggle,
+  useInputState,
+  useLocalStorageState,
+  useLocalStorageReducer
+}
