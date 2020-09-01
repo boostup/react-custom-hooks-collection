@@ -2,17 +2,13 @@
 
 # It is all in the name of the package baby !
 
-## Demos on CodeSandbox
-
-- [useToggle](https://codesandbox.io/s/boostupreact-custom-hooks-collectionusetoggledemo-kvkwd)
-
 #### Note:
 
-All demos are available inside the `/example` directory of this repository — ;)
+All demos are available inside the `/example` directory of this package/repository — ;)
 
 Here is the [README](https://github.com/boostup/react-custom-hooks-collection/blob/master/example/README.md) for the `example` subproject.
 
-## React hook resources
+## Other React hook resources
 
 - [Home-baked Hooks](https://react.christmas/2019/13)
 
