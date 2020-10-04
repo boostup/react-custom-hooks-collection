@@ -33,7 +33,7 @@ export default () => {
         </span>
       </h4>
       <p>{movie.opening_crawl}</p>
-      <p style={{ fontStyle: 'italic', color: 'grey' }}>
+      <p className='note'>
         Note: Thanks to the useEffect hook, some code can be triggered after a
         rendering occured. In this case, once a movie number is selected, its
         display is changed. This triggers the re-rendering of the component,

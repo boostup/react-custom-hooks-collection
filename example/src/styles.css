@@ -13,3 +13,8 @@
   width: 300px;
   margin: 0 auto;
 }
+
+.note {
+  font-style: italic;
+  color: grey;
+}
