@@ -6,6 +6,8 @@
 
 All demos are available inside the `/example` directory of this package/repository — ;)
 
+Here is the [Live Demo](https://boostup.github.io/react-custom-hooks-collection/)
+
 Here is the [README](https://github.com/boostup/react-custom-hooks-collection/blob/master/example/README.md) for the `example` subproject.
 
 ## Other React hook resources
