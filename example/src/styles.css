@@ -22,3 +22,7 @@ h2 {
   font-style: italic;
   color: grey;
 }
+
+img {
+  width: 100%;
+}

@@ -1,11 +1,5 @@
-import useToggle from './hooks/useToggleState'
-import useInputState from './hooks/useInputState'
-import useLocalStorageState from './hooks/useLocalStorageState'
-import useLocalStorageReducer from './hooks/useLocalStorageReducer'
-
-export {
-  useToggle,
-  useInputState,
-  useLocalStorageState,
-  useLocalStorageReducer
-}
+export { default as useToggle } from './hooks/useToggleState'
+export { default as useInputState } from './hooks/useInputState'
+export { default as useLocalStorageState } from './hooks/useLocalStorageState'
+export { default as useLocalStorageReducer } from './hooks/useLocalStorageReducer'
+export { default as useLoadable } from './hooks/useLoadable'
