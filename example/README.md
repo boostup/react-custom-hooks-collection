@@ -23,10 +23,6 @@ npm install
 npm start
 ```
 
-## Demo on CodeSandbox
-
-- [useToggle](https://codesandbox.io/s/boostupreact-custom-hooks-collectionusetoggledemo-kvkwd)
-
 #### Note:
 
 All demos are available inside the `/example` directory of this repository — ;)

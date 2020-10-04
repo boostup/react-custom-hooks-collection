@@ -15,8 +15,9 @@ export default () => {
 
   return (
     <div>
-      <h2>Star Wars Movies (Online API)</h2>
-      <h3>Pick one</h3>
+      <h2>useInputState</h2>
+      <h3>Star Wars Movies (Online API)</h3>
+      <h4>Pick one</h4>
       <select value={number} onChange={setNumber}>
         <option value='1'>Chapter 1</option>
         <option value='2'>Chapter 2</option>
@@ -33,7 +34,7 @@ export default () => {
         </span>
       </h4>
       <p>{movie.opening_crawl}</p>
-      <p style={{ fontStyle: 'italic', color: 'grey' }}>
+      <p className='note'>
         Note: Thanks to the useEffect hook, some code can be triggered after a
         rendering occured. In this case, once a movie number is selected, its
         display is changed. This triggers the re-rendering of the component,

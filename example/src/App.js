@@ -2,6 +2,8 @@ import React from 'react'
 import TogglesDemo from './demoComponents/TogglesDemo'
 import SWMoviesDemo from './demoComponents/SWMoviesDemo'
 import InputTextDemo from './demoComponents/InputTextDemo'
+import LocalStorageDemo from './demoComponents/LocalStorageDemo'
+import LocalStorageReducerDemo from './demoComponents/LocalStorageReducerDemo'
 import './styles.css'
 
 function App() {
@@ -11,6 +13,8 @@ function App() {
       <TogglesDemo />
       <SWMoviesDemo />
       <InputTextDemo />
+      <LocalStorageDemo />
+      <LocalStorageReducerDemo />
     </div>
   )
 }
