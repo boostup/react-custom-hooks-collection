@@ -12,7 +12,8 @@ export default () => {
         flexDirection: 'column'
       }}
     >
-      <h2>Managed Input</h2>
+      <h2>useInputState</h2>
+      <h3>Managed Input</h3>
       <input type='text' value={email} onChange={updateEmail} />
       <input type='password' value={password} onChange={updatePassword} />
       <button

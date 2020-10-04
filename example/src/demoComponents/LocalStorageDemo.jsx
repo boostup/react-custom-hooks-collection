@@ -13,6 +13,7 @@ export default () => {
 
   return (
     <div>
+      <h2>useLocalStorageState</h2>
       <h3>Last save</h3>
       <p>{formatDate(currentDate)}</p>
       <button onClick={handleClick}>Save Date</button>
