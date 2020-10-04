@@ -4,6 +4,9 @@ import SWMoviesDemo from './demoComponents/SWMoviesDemo'
 import InputTextDemo from './demoComponents/InputTextDemo'
 import LocalStorageDemo from './demoComponents/LocalStorageDemo'
 import LocalStorageReducerDemo from './demoComponents/LocalStorageReducerDemo'
+import SetTimeoutDemo from './demoComponents/useLoadable/SetTimeoutDemo'
+import JSONPlaceholderDemo from './demoComponents/useLoadable/JSONPlaceholderDemo'
+import ImageDemo from './demoComponents/useLoadable/ImageDemo'
 import './styles.css'
 
 function App() {
@@ -15,6 +18,9 @@ function App() {
       <InputTextDemo />
       <LocalStorageDemo />
       <LocalStorageReducerDemo />
+      <SetTimeoutDemo />
+      <JSONPlaceholderDemo />
+      <ImageDemo />
     </div>
   )
 }
