@@ -2,13 +2,39 @@
 
 # It is all in the name of the package baby !
 
-#### Note:
+[Live Demo](https://boostup.github.io/react-custom-hooks-collection/)
 
-All demos are available inside the `/example` directory of this package/repository — ;)
+## Install
 
-Here is the [Live Demo](https://boostup.github.io/react-custom-hooks-collection/)
+```bash
+npm i @boostup/react-custom-hooks-collection
+```
 
-Here is the [README](https://github.com/boostup/react-custom-hooks-collection/blob/master/example/README.md) for the `example` subproject.
+## `useToggle` Example
+
+```jsx
+import React from 'react'
+import { useToggle } from '@boostup/react-custom-hooks-collection'
+
+function App() {
+  const [isHappy, setIsHappy] = useToggle(true)
+
+  return (
+    <div>
+      <h2>useToggle Demo</h2>
+      <h1 onClick={setIsHappy}>{isHappy ? '😀' : '😡'}</h1>
+    </div>
+  )
+}
+
+export default App
+```
+## Notes
+
+- All demos are available inside the `/example/src/demoComponents` directory 
+- All custom hooks are available inside the `/src/hooks` directory
+
+---
 
 ## Other React hook resources
 
@@ -20,67 +46,39 @@ Here is the [README](https://github.com/boostup/react-custom-hooks-collection/bl
 
 - [react-hook-form - npm](https://www.npmjs.com/package/react-hook-form)
 
-## Videos to learn about hooks
+### Videos to learn about hooks
 
 - [90% Cleaner React With Hooks](https://www.youtube.com/watch?v=wXLf18DsV-I)
 
-## Install
-
-```bash
-npm install --save @boostup/react-custom-hooks-collection
-```
-
-## Usage
-
-```jsx
-import React from 'react'
-import { useToggle } from '@boostup/react-custom-hooks-collection'
-
-function App() {
-  const [isHappy, setIsHappy] = useToggle(true)
-  const [isHeartBroken, setIsHeartBroken] = useToggle(false)
-  const [isBanana, setIsBanana] = useToggle(true)
-
-  return (
-    <div>
-      <h2>useToggle Demo</h2>
-      <h1 onClick={setIsHappy}>{isHappy ? '😀' : '😡'}</h1>
-      <h1 onClick={setIsHeartBroken}>{isHeartBroken ? '💔' : '💓'}</h1>
-      <h1 onClick={setIsBanana}>{isBanana ? '🍌' : '🍏'}</h1>
-    </div>
-  )
-}
-
-export default App
-```
+---
 
 ## About this NPM package
 
-This package was generated thanks to the [create-react-library NPM package](https://www.npmjs.com/package/create-react-library#creating-a-new-module).
+This package was generated thanks to the [create-react-library package](https://www.npmjs.com/package/create-react-library#creating-a-new-module).
 
-### [Development](https://www.npmjs.com/package/create-react-library#development)
+---
 
-Local development is broken into two parts (ideally using 2 terminal windows or tabs).
+## Contributing to this package
 
-First, run rollup to watch your src/ module and automatically recompile it into dist/ whenever you make changes.
-
-```bash
-npm start # runs rollup with watch flag
+- [create-react-library documentation](https://www.npmjs.com/package/create-react-library#development)
+- to start the dev environment, simply run the command: 
 ```
+npm run dev
+``` 
 
-The second part will be running the example/ create-react-app that's linked to the local version of your module.
+### Local development consists of two parts :
 
-```bash
-# (in another tab)
-cd example
-npm start # runs create-react-app dev server
-```
+1) Rollup watches the `/src/` directory (where the custom hooks are collected) for any changes in the code and automatically recompiles it into the `/dist/` directory
 
-Now, anytime you make a change to your library in src/ or to the example app's example/src, create-react-app will live-reload your local dev server so you can iterate on your component in real-time.
+2) The `/example/` directory is a `create-react-app` app that serves the puropose of demonstrating the use of each of the custom `hooks` collected in `/src/hooks`.  
 
-## Troubleshooting while developping with this package
+Anytime changes are made in `/src/` or `/example/src`, they will be live-reloaded, allowing for real-time development of this NPM package.
 
-If you use VS Code on linux, you might get the following error after a little while once both `npm start` commands are running:
+---
+
+## Dev Troubleshooting
+
+If you use VS Code on linux, you might get the following error after running the `npm run dev` command: 
 
 > Visual Studio Code is unable to watch for file changes in this large workspace (error ENOSPC)
 
